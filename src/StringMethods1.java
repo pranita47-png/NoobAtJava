@@ -20,5 +20,16 @@ public class StringMethods1 {
         //5.replace
         String str6= str.replace('e','y');
         System.out.println(str6);
+        //6. presence of a char
+        String str7=new String("www.K3g.com");
+        System.out.println(str7.startsWith("www."));
+        System.out.println(str7.startsWith("ww.K",1));
+        System.out.println(str7.endsWith(".com"));
+        //7. finding the char or its index
+        System.out.println(str7.charAt(4));
+        System.out.println(str7.indexOf(".")); //left to right
+        System.out.println(str7.indexOf(".",4));
+        System.out.println(str7.lastIndexOf(".")); //right to left
+
     }
 }
