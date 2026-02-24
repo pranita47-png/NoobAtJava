@@ -22,6 +22,6 @@ public class Print1 {
         System.out.printf("%(d\n",h);
         System.out.format("%07d\n",h);
         System.out.printf("%+d\n",h);
-        System.out.printf("% d",w);
+        System.out.printf("% 5d",w);
     }
 }

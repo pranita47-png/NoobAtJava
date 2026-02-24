@@ -1,34 +1,34 @@
 public class StringMethods1 {
     public static void main(String[] arr) {
-        String str = "  Well Comee";
+        String str = "  Well Comee ";
         //1.length
         int l = str.length();
         System.out.println("length of the string = " + l);
         //2. lower and upper case Also string is immutable
         String str1 = str.toLowerCase();  //created inside heap
-        System.out.println(str1);
+        System.out.println("lower case of the string = "+str1);
         String str2 = str.toUpperCase();
-        System.out.println(str2);
+        System.out.println("upper case of the string = "+str2);
         //3. trim
         String str3 = str.trim();
-        System.out.println(str3);
+        System.out.println("the trim version of the string = "+str3);
         //4.substring(start, endindex)
         String str4 = str.substring(3);
-        System.out.println(str4);
+        System.out.println("printing wrt index 3 = "+str4);
         String str5 = str.substring(4, 11); //l is on 4th index and e on 11th and upto (end index-1) it gets printed
-        System.out.println(str5);
+        System.out.println("printing wrt index 4 and till index 11 = "+str5);
         //5.replace
         String str6 = str.replace('e', 'y');
         System.out.println(str6);
         //6. presence of a char
         String str7 = new String("www.K3g.com");
-        System.out.println(str7.startsWith("www."));
+        System.out.println("if the www. present in the string= "+str7.startsWith("www."));
         System.out.println(str7.startsWith("ww.K", 1));
         System.out.println(str7.endsWith(".com"));
         //7. finding the char or its index
         System.out.println(str7.charAt(4));
         System.out.println(str7.indexOf(".")); //left to right
-        System.out.println(str7.indexOf(".", 4));
+        System.out.println(str7.indexOf(".", 4,7));
         System.out.println(str7.lastIndexOf(".")); //right to left
         //8. comparision of strings
 // == is used to compare between ref hence heap java and pool java is not same but using equals method we say they are equal as here we are comparing strings
@@ -45,7 +45,7 @@ public class StringMethods1 {
         //10. Contains
         String str12="Welcome Home buddy";
         String str13=" yayyy";
-        System.out.println(str12.contains("Home"));
+        System.out.println("does it conatain Home= "+str12.contains("Home"));
         System.out.println(str12.contains("home"));
         System.out.println(str12.concat(str13));
         //adding string to int and conversion
