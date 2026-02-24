@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class NoSpecialcharacter {
+    public static void main(String [] arr){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the string- ");
+        String str1=sc.nextLine();
+        System.out.println("the required string with no special character is "+ str1.replaceAll("[^0-9a-zA-Z]",""));
+    }
+}
