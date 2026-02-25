@@ -4,7 +4,7 @@ public class RemovingExtraSpaces {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the string- ");
         String str1=sc.nextLine();
-        System.out.println("the string without extra spaces is "+str1.replaceAll( "\\s+"," "));
+        System.out.println("the string without extra spaces is "+str1.replaceAll( "\\s+"," ").trim());
 
     }
 }
