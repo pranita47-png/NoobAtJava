@@ -7,13 +7,13 @@ class UrlWebPro{
         String web=str.substring(0,str.indexOf(":"));
         String pro=str.substring(str.lastIndexOf("."));
         //---------WEBSITE-----------
-        if(web.equals("https")){
-            System.out.println("It is a hypertext transfer protocol");
+        if(web.equalsIgnoreCase("https")){ //what if user write httPs we can use to lower case or upper case for now
+            System.out.println("It is a hypertext transfer protocol secure");
         }
-        else if(web.equals("http")){
-            System.out.println("It is a hyperText transfer protocol secure");
+        else if(web.equalsIgnoreCase("http")){
+            System.out.println("It is a hyperText transfer protocol");
         }
-        else if(web.equals("ftp")){
+        else if(web.equalsIgnoreCase("ftp")){
             System.out.println("It is file transfer protocolh");
         }
         else{
