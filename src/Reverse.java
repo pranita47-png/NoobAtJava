@@ -1,17 +1,18 @@
 import java.util.Scanner;
-public class Reverse {
-    public static void main(String [] arr){
+class Reverse {
+    public static void main(String[] arr){
         Scanner sc=new Scanner(System.in);
-        System.out.println("=====Reverse a Number====");
+        System.out.println("=====Reverse=====");
         System.out.println("Enter the number- ");
-        int x,n,r=0;
+        int n,d,N,r=0;
         n=sc.nextInt();
-        while(n>0){
-            x=n%10;
-            n=n/10;
-            r=r*10+x;
+        N=n;
+        while(N>0){
+            d=N%10;
+            N=N/10;
+            r=r*10+d;
         }
-        System.out.printf("Reverse of the number is %d", r);
-
+        System.out.println(r);
+        }
     }
-}
+
